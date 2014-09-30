@@ -1,0 +1,26 @@
+/*****************************
+		出演者
+*****************************/
+#guest_container li {
+  position: relative;
+  display: table;
+  margin-bottom: 20px; }
+
+.guest_icon {
+  display: table-cell;
+  width: 150px;
+  height: 150px; }
+  @media screen and (max-width: 786px) {
+    .guest_icon {
+      width: 100px;
+      height: auto; } }
+
+.guest_txt {
+  padding-left: 30px;
+  display: table-cell;
+  vertical-align: top; }
+  .guest_txt a, .guest_txt span {
+    display: inline-block; }
+  @media screen and (max-width: 786px) {
+    .guest_txt {
+      padding-left: 10px; } }

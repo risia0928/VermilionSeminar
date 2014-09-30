@@ -1,0 +1,12 @@
+/*****************************
+	会場案内
+*****************************/
+.angular-google-map-container {
+	margin-top: 30px;
+	height: 265px;
+	border: 10px #fff solid;
+	box-shadow: 0 0 5px #ccc;
+	@media screen and (max-width: 786px) {
+		height: 150px;
+	}
+}

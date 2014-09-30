@@ -1,0 +1,8 @@
+RewriteEngine On
+
+#RewriteCond %{QUERY_STRING} ^_escaped_fragment_=(.*)$
+#RewriteRule ^(.*)$ /snapshot/$1.png? [L,NC]
+
+RewriteCond %{REQUEST_URI} !^/bot/.*$
+RewriteCond %{HTTP_USER_AGENT} Googlebot       [NC]
+RewriteRule ^(.*)$ /test/VermilionSeminar/snapshot/$1.png                   [R=301,L]

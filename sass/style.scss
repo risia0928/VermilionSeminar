@@ -1,0 +1,106 @@
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 100%;
+	outline: 0;
+	vertical-align: baseline;
+	font-style: normal;
+	line-height: 1.8;
+	font-family: "mplus-1c-regular","Trebuchet MS","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo, Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+html {
+	@media screen and (min-width: 787px) {
+		height: 100%;
+	}
+}
+html, body {
+	min-height: 100%;
+}
+body{
+	position: relative;
+	min-height: 100%;
+	background: #fff;
+	color: #383D43;
+	@media screen and (min-width: 787px) {
+		height: 100%;
+		background-image: url(../assets/images/bg-03.png);
+		background-repeat: no-repeat;
+		background-position: 50% 40%;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+}
+ol, ul {
+	list-style: none;
+}
+h1 {
+	text-align: center;
+}
+a {
+	text-decoration: underline;
+	color: rgba(223,44,92,1);
+}
+@font-face {
+	font-family: 'typicons';
+	src: url('../assets/font/typicons.ttf');
+}
+@font-face {
+	font-family: 'fontawesome';
+	src: url('../assets/font/fontawesome.ttf');
+}
+@font-face {
+	font-family: 'mplus-1c-regular';
+	src: url('../assets/font/mplus-1c-regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'mplus-1c-light';
+	src: url('../assets/font/mplus-1c-light.ttf') format('truetype');
+}
+.mplus-1c-light {
+	font-family: "mplus-1c-light";
+}
+/*****************************
+	ng系アニメーション
+*****************************/
+.ng-enter,.ng-move {
+	-webkit-transition: opacity 0.15s linear;
+	transition: opacity 0.15s linear;
+}
+.ng-leave{
+	/*
+	-webkit-transition: opacity 0.25s linear;
+	transition: opacity 0.25s linear;
+	*/
+}
+.ng-enter {					opacity: 0;}
+.ng-enter.ng-enter-active {	opacity: 1;}
+.ng-leave {					opacity: 1;}
+.ng-leave.ng-leave-active {	opacity: 0;}
+.ng-move {					opacity: 0.5;}
+.ng-move.ng-move-active {	opacity: 1;}
+/*****************************
+	共通
+*****************************/
+#wrapper {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0 auto;
+	min-height: 100%;
+	background: rgba(255,255,255,0.1);
+}
+.page {
+	box-sizing: border-box;
+	width: 96%;
+	margin: 0 auto;
+	padding: 80px 0 0px;
+	@media screen and (max-width: 786px) {
+		width: 100%;
+		padding: 0px;
+	}
+}
+/*****************************
+	margin/padding
+*****************************/
+.mt25 {margin-top: 25px!important;}

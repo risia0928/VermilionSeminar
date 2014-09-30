@@ -1,0 +1,70 @@
+/*****************************
+  記事
+*****************************/
+.articleBody {
+  box-sizing: border-box;
+  max-width: 940px;
+  padding: 10px 20px; }
+  @media screen and (min-width: 787px) {
+    .articleBody {
+      padding: 20px 45px 35px;
+      margin: 50px auto 0;
+      background: rgba(255, 255, 255, 0.7) none;
+      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16); } }
+  .articleBody p {
+    line-height: 24px; }
+    @media screen and (max-width: 786px) {
+      .articleBody p {
+        font-size: 14px;
+        line-height: 20px; } }
+  .articleBody .inner_head {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: rgba(223, 44, 92, 0.6);
+    color: #fff;
+    text-align: center;
+    font-weight: normal; }
+    @media screen and (max-width: 786px) {
+      .articleBody .inner_head {
+        background: rgba(223, 44, 92, 0.8);
+        letter-spacing: 3px; } }
+  .articleBody .outer_head {
+    text-align: center;
+    font-size: 28px;
+    color: black;
+    font-weight: normal;
+    line-height: 20px;
+    text-shadow: 0 0 1px #fff, 0 0 6px #fff; }
+    .articleBody .outer_head.top {
+      margin-top: 160px;
+      margin-bottom: 20px; }
+    .articleBody .outer_head.bottom {
+      margin-bottom: 35px; }
+    .articleBody .outer_head b {
+      font-family: "mplus-1c-regular";
+      font-weight: bold;
+      font-size: 32px; }
+  .articleBody.top_pc {
+    background: transparent !important;
+    -webkit-box-shadow: none; }
+    @media screen and (max-width: 786px) {
+      .articleBody.top_pc {
+        display: none; } }
+  .articleBody.top_mobile {
+    padding-bottom: 0; }
+    @media screen and (min-width: 787px) {
+      .articleBody.top_mobile {
+        display: none; } }
+    .articleBody.top_mobile img {
+      width: 100%; }
+  .articleBody .social_container {
+    display: table;
+    margin-top: 20px; }
+  .articleBody .cell {
+    display: inline-block; }
+  .articleBody #twitter-widget-0 {
+    width: 100px !important; }
+  .articleBody .fb_iframe_widget span {
+    vertical-align: top !important;
+    margin-right: 10px; }

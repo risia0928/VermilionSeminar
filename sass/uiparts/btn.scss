@@ -1,0 +1,39 @@
+.btn_container {
+	display: table;
+	margin: 10px auto;
+	text-align: center;
+}
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	transition: background 0.25s;
+	background: rgba(223,44,92,1);
+	padding: 15px 30px;
+	border-radius: 10px;
+	width: 140px;
+	letter-spacing: 4px;
+	border: none;
+	font-size: 16px;
+	&:hover {
+		background: #FF6C94;
+	}
+	&.long {
+		width: 280px;
+	}
+	&.entry {
+		width: 200px;
+		&:before {
+			font-family: "fontawesome";
+			content: "\f13a";
+			margin-right: 8px;
+		}
+		@media screen and (max-width: 786px) {
+			width: 160px;
+			padding: 10px 30px;
+		}
+	}
+	&:disabled {
+		background:#666;
+	}
+}

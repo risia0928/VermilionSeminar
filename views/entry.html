@@ -1,0 +1,69 @@
+<article class="articleBody">
+	<h2 class="inner_head">エントリー</h2>
+	<p>エントリーに必要な情報をご記入ください。</p>
+	<p>「 * 」印は記入必須項目です。</p>
+	<form method="post" name="userInfo" class="">
+		<div class="form_table">
+			<dl>
+				<dt>お名前<i>*</i></dt>
+				<dd>
+					<span class="name_container">
+						<label for="familyname">姓</label>
+						<input type="text" autocapitalize="off" name="familyname" ng-model="familyname" required id="familyname">
+					</span>
+					<span class="name_container">
+						<label for="name">名</label>
+						<input type="text" autocapitalize="off" name="name" ng-model="name" required id="name">
+					</span>
+					<span class="ok" ng-show="userInfo.familyname.$valid && userInfo.name.$valid">OK</span>
+				</dd>
+			</dl>
+			<dl>
+				<dt>フリガナ<span>（全角カナ）</span><i>*</i></dt>
+				<dd>
+					<span class="name_container">
+						<label for="familynameKana">セイ</label>
+						<input type="text" autocapitalize="off" name="familynameKana" ng-model="familynameKana" required id="familynameKana">
+					<span>
+					<span class="name_container">
+						<label for="nameKana">メイ</label>
+						<input type="text" autocapitalize="off" name="nameKana" ng-model="nameKana" required id="nameKana">
+					<span>
+					<span class="ok" ng-show="userInfo.familynameKana.$valid && userInfo.nameKana.$valid">OK</span>
+				</dd>
+			</dl>
+			<dl>
+				<dt>プレイヤーネーム<i>*</i></dt>
+				<dd>
+					<input type="text" autocapitalize="off" name="playername" ng-model="playername" required id="playername" class="all">
+					<span class="ok" ng-show="userInfo.playername.$valid">OK</span>
+				</dd>
+			</dl>
+			<dl>
+				<dt>リーグ<i>*</i></dt>
+				<dd>
+					<select ng-model="selectedLeague" ng-options="l as l.label for l in league" required>
+						<option value="">選択してください</option>
+					</select>
+					<span class="ok" ng-show="selectedLeague">OK</span>
+				</dd>
+			</dl>
+			<dl>
+				<dt>メールアドレス<i>*</i></dt>
+				<dd>
+					<input type="email" autocapitalize="off" name="mail" ng-model="mail" required id="mail" class="all">
+					<span class="ok" ng-show="userInfo.mail.$valid">OK</span>
+				</dd>
+			</dl>
+			<dl>
+				<dt>ご意見・ご要望</dt>
+				<dd>
+					<textarea name="twitter" rows="10" ng-model="twitter" ng-maxlength="140"></textarea>
+				</dd>
+			</dl>
+		</div>
+		<div class="btn_container mt25">
+			<input class="btn entry" type="submit" ng-click="takeOver()" value="エントリー" ng-disabled="userInfo.$invalid">
+		</div>
+	</form>
+</article>

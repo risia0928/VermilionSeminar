@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="no-js" lang="ja" ng-app="app" ng-controller="main">
+<head>
+	<meta charset="utf-8"/>
+	<title>{{title}}</title>
+	<meta name="description" content="LoV3の最前線を生き抜くための戦術をあなたに! LoVランカー達によるLoVのファンイベント">
+	<meta name="fragment" content="!"><!-- クローラーにAjaxアプリケーションであることを伝える -->
+	<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+	<link rel="stylesheet" href="css/style.css"/>
+	<!-- JS -->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+	<script src="bower_components/lodash.underscore/lodash.underscore.min.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.min.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+	<script src="bower_components/angular-google-maps/angular-google-maps.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/directive/socialshare-facebook.js"></script>
+	<script src="js/directive/socialshare-twitter.js"></script>
+	<script src="js/directive/socialshare-googleplus.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div id="header_inner">
+				<h1>
+					<a href="#/">
+						<img src="./assets/images/logo_lov.png" alt="NITRO SUPER SONIC 2013 (ニトロスーパーソニック2013)">
+					</a>
+				</h1>
+				<ul id="header_list">
+					<li><a ng-class="{active: (slug == 'program')}" href="#/program"><span>Program</span>プログラム</a></li>
+					<li><a ng-class="{active: (slug == 'entry')}" href="#/entry"><span>Entry</span>エントリー</a></li>
+					<li><a ng-class="{active: (slug == 'guest')}" href="#/guest"><span>Guest</span>出演者</a></li>
+					<li><a ng-class="{active: (slug == 'venue')}" href="#/venue"><span>Venue</span>会場案内</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="page" ng-view></div>
+
+		<article class="articleBody foot">
+			<h2 class="inner_head">公演概要</h2>
+			<p><span class="info">公演名</span>Vermilion Seminar (ヴァーミリオンセミナー)</p>
+			<p><span class="info">日時</span>2014年XX月XX日(X) 開場XX:00、開演XX:00</p>
+			<p><span class="info">会場</span>東京国際フォーラム ホールA</p>
+			<p><span class="info">価格</span>500円</p>
+			<p><span class="info">座種</span>全席自由</p>
+			<p><span class="info">出演者</span>彩音、アイク・イクザワ(生沢佑一)、いとうかなこ、岩瀬敬吾、カリキュラマシーン、白石稔、第一宇宙速度、Swinging Popsicle、多田葵、茅原実里、ChouCho、Zwei、Hassy、春奈るな、VERTUEUX、ミルキィホームズ、LiSA、ワタナベカズヒロ、ZIZZ BAND、ジョイまっくす、ニトロくん、and more...</p>
+			<p>詳しくは<a href="#/guest">出演者</a>をご覧ください。</p>
+			<div class="social_container">
+				<tweet class="cell" text="'aaaaaaa'"></tweet>
+				<fb-like class="cell" app-id="562040177257975"></fb-like>
+				<google-plus class="cell"></google-plus>
+			</div>
+		</article>
+	</div>
+</body>
+</html>

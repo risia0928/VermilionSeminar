@@ -1,0 +1,33 @@
+.btn_container {
+  display: table;
+  margin: 10px auto;
+  text-align: center; }
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: background 0.25s;
+  background: #df2c5c;
+  padding: 15px 30px;
+  border-radius: 10px;
+  width: 140px;
+  letter-spacing: 4px;
+  border: none;
+  font-size: 16px; }
+  .btn:hover {
+    background: #FF6C94; }
+  .btn.long {
+    width: 280px; }
+  .btn.entry {
+    width: 200px; }
+    .btn.entry:before {
+      font-family: "fontawesome";
+      content: "\f13a";
+      margin-right: 8px; }
+    @media screen and (max-width: 786px) {
+      .btn.entry {
+        width: 160px;
+        padding: 10px 30px; } }
+  .btn:disabled {
+    background: #666; }

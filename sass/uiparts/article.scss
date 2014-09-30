@@ -1,0 +1,84 @@
+/*****************************
+  記事
+*****************************/
+.articleBody {
+	box-sizing: border-box;
+	max-width: 940px;
+	padding: 10px 20px;
+	@media screen and (min-width: 787px) {
+		padding: 20px 45px 35px;
+		margin: 50px auto 0;
+		background: rgba(255,255,255,0.7) none;
+		-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.16);
+	}
+	p {
+		line-height: 24px;
+		@media screen and (max-width: 786px) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+	.inner_head {
+		margin-top: 10px;
+		margin-bottom: 20px;
+		border-radius: 20px;
+		background: rgba(223,44,92,0.6);
+		color: #fff;
+		text-align: center;
+		font-weight: normal;
+		@media screen and (max-width: 786px) {
+			background: rgba(223,44,92,0.8);
+			letter-spacing: 3px;
+		}
+	}
+	.outer_head{
+		text-align: center;
+		font-size: 28px;
+		color: black;
+		font-weight: normal;
+		line-height: 20px;
+		text-shadow: 0 0 1px #fff,0 0 6px #fff;
+		&.top{
+			margin-top: 160px;
+			margin-bottom: 20px;
+		}
+		&.bottom{
+			margin-bottom: 35px;
+		}
+		b {
+			font-family: "mplus-1c-regular";
+			font-weight: bold;
+			font-size: 32px;
+		}
+	}
+	&.top_pc {
+		@media screen and (max-width: 786px) {
+			display:none;
+		}
+		background: transparent!important;
+		-webkit-box-shadow: none;
+	}
+	&.top_mobile {
+		padding-bottom: 0;
+		@media screen and (min-width: 787px) {
+			display:none;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.social_container {
+		display: table;
+		margin-top: 20px;
+	}
+	.cell {
+		display: inline-block;
+	}
+	#twitter-widget-0 {
+		width: 100px!important;
+	}
+	.fb_iframe_widget span {
+		vertical-align: top!important;
+		margin-right: 10px;
+	}
+}

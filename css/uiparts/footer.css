@@ -1,0 +1,15 @@
+/*****************************
+  フッター
+*****************************/
+.info {
+  color: #df2c5c; }
+
+.info:before {
+  content: "\0025a0"; }
+
+.info:after {
+  content: "\002026\002026"; }
+
+.foot {
+  margin-bottom: 70px !important;
+  padding-top: 1px; }

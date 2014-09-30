@@ -1,0 +1,14 @@
+<article class="articleBody">
+	<h2 class="inner_head">出演者一覧</h2>
+	<ul id="guest_container">
+		<li ng-repeat="g in guest">
+			<img class="guest_icon" ng-src="./assets/images/{{g.image}}">
+			<div class="guest_txt">
+				<p><span class="info">PN</span>{{g.name}}</p>
+				<p><span class="info">twitter</span><a ng-href="https://twitter.com/{{g.twitter}}">{{g.twitter}}</a></p>
+				<p><span class="info">使用デッキ</span>{{g.deck}}</p>
+				<p><span class="info">紹介</span>{{g.description}}</p>
+			</div>
+		</li>
+	</ul>
+</article>
